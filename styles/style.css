@@ -52,16 +52,21 @@ ol {
 
 .result {
   grid-area: result;
+  width: 711px;
+  height: 456px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .content__details {
   grid-area: details;
-  inline-size: 100%;
-  height: 440px;
+  width: 399px;
+  height: 534px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 25px;
 }
 
 .result__video-container {
@@ -80,6 +85,18 @@ ol {
   flex-direction: row;
   justify-content: start;
   gap: 40px;
+  width: 100%;
+}
+
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.search-form__fieldset-title {
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
 }
 
 .content__list {
@@ -112,19 +129,56 @@ ol {
   object-position: center;
 }
 
-.search-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .content__video-card-description-container {
   flex-grow: 1;
 }
 
+.title {
+  width: 259px;
+  height: 210px;
+  font-family: "Oswald";
+  font-weight: bold;
+  font-size: 75px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 94%;
+}
 
+.content__accent {
+  color: #545050;
+}
 
+.content__card-link {
+  font-family: "Oswald";
+  text-decoration: none;
+  color: #FFFFFF;
+}
 
+.content__video-card-title {
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.content__video-card-description {
+  font-weight: 400;
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  line-height: 16.2px;
+
+   display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
 
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
